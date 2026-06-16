@@ -1,6 +1,5 @@
 require("dotenv/config");
-const {defineConfig} = require("drizzle-kit");
-
+const { defineConfig } = require("drizzle-kit");
 
 const config = defineConfig({
   dialect: "postgresql",
@@ -10,3 +9,5 @@ const config = defineConfig({
     url: process.env.DB_URI,
   },
 });
+
+module.exports = config;
